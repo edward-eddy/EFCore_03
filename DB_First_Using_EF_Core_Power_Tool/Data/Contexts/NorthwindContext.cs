@@ -10,6 +10,9 @@ namespace DB_First_Using_EF_Core_Power_Tool.Data.Contexts;
 
 public partial class NorthwindContext : DbContext
 {
+    public NorthwindContext()
+    {
+    }
     public NorthwindContext(DbContextOptions<NorthwindContext> options)
         : base(options)
     {
